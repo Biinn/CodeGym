@@ -1,0 +1,6 @@
+Git init: tạo local repository
+Git add .: thêm tất cả file vào vùng chờ
+Git commit : lưu trữ các thay đổi trong kho lưu trữ
+Git push origin: đưa các file thay đổi lên remote repository
+Git remote add origin + url(đường dẫn đến remote repository): tạo connect từ local đến remote
+
