@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let physics, chemistry, biology;
+
+        physics = prompt("Nhap diem mon Vat Ly:");
+        chemistry = prompt("Nhap diem mon Hoa Hoc:");
+        biology = prompt("Nhap diem mon Sinh Hoc:");
+
+        physics = parseFloat(physics);
+        chemistry = parseFloat(chemistry);
+        biology = parseFloat(biology);
+
+        let diemtb = (physics + chemistry + biology) / 3;
+        let diemtong = physics + chemistry + biology;
+
+        document.write("Diem trung binh tat ca cac mon la:", diemtb);
+        document.write("<br/>");
+        document.write("Diem tong tat ca cac mon la:", diemtong);
+    </script>
+</body>
+</html>
