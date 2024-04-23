@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Nhập vào hệ số a: ");
+        let b = +prompt("Nhập vào hệ số b: ");
+        let c = +prompt("Nhập vào hệ số c: ");
+        let delta = b * b - 4 * a * c;
+        let x1, x2;
+
+        if(delta > 0){
+            x1 = (-b + Math.sqrt(delta)) / (2 * a);
+            x2 = (-b - Math.sqrt(delta)) / (2 * a);
+            document.write("Phương trình có hai nghiệm phân biệt là: x1 = " + x1 + ", x2 = " + x2);
+        }else if(delta === 0){
+            x1 = -b / (2 * a);
+            document.write("Phương trình có nghiệm kép: x1, x2= " + x1);
+        }else{
+            document.write("Phương trình không có nghiệm thực");
+        }
+    </script>
+</body>
+</html>

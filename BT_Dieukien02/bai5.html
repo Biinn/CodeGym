@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = parseFloat(prompt("Nhập vào cạnh góc vuông a: "));
+        let b = parseFloat(prompt("Nhập vào cạnh góc vuông b: "));
+
+        if(a > 0 && Number.isInteger(a)){
+            if(b > 0 &&Number.isInteger(b)){
+                let areaABC = 1/2* a * b;
+                document.write("Diện tích hình tam giác vuông là: " + areaABC);
+            }else{
+                document.write("Độ dài các cạnh không hợp lệ. Vui long nhập độ dài các cạnh bằng số dương");
+            }
+        }else{
+            document.write("Độ dài các cạnh không hợp lệ. Vui long nhập độ dài các cạnh bằng số dương");
+        }
+    </script>
+</body>
+</html>

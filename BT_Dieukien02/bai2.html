@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let met = parseFloat(prompt("Nhập giá trị mét: "));
+
+        if(met >= 0){
+            let feet = met *3.28084;
+            document.write("Giá trị feet sau khi được chuyển đổi là: " + feet);
+        }else{
+            document.write("Nhập giá trị không hợp lệ. Vui long nhập một số không âm");
+        }
+    </script>
+</body>
+</html>
