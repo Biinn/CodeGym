@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let thoigiangoi = +prompt( "Nhap thoi gian so phut goi: ");
+        
+        if(thoigiangoi<= 50){
+            document.write("Gia cuoc dien thoai cho 50phut dau tien la: " + thoigiangoi  * 600 + "vnđ")
+        }else if(thoigiangoi <= 150){
+            document.write("Gia cuoc dien thoai cho 150 dau tien la: " + thoigiangoi * 400 + "vnđ");
+        }else if(thoigiangoi > 150){
+            document.write("Gia cuoc dien thoai tren 150 phut dau tien la: " + thoigiangoi * 200 + "vnđ");
+        }
+    </script>
+</body>
+</html>

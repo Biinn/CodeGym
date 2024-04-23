@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Nhap vao so a");
+        let b = +prompt("Nhap vao so b");
+        let c = +prompt("Nhap vao so c");
+        let max;
+
+        if(a > b && a > c ){
+            max = a;
+        }else if(b > a && b > c){
+            max = b;
+        }else{
+            max = c;
+        }
+        document.write("So lon nhat trong 3 chu so la: " + max);
+    </script>
+</body>
+</html>

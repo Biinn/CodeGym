@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let doanhthu = +prompt("Nhap vao doanh thu san pham ban duoc: ");
+        
+        if(doanhthu <= 2000000){
+            document.write("Hoa hong cua ban nhan duoc la: " + doanhthu * 3 / 100);
+        }else if(doanhthu <= 5000000){  
+            document.write("Hoa hong cua ban nhan duoc la: " + (2000000 * 3 / 100 + (doanhthu - 2000000) * 5 /100));
+        }else if(doanhthu > 5000000){
+            document.write("Hoa hong cua ban nhan duoc la: " + doanhthu * 10 / 100);
+        }
+    </script>
+</body>
+</html>

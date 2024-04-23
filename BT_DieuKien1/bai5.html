@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let diemkt = parseFloat(prompt("Nhap vao diem qua trinh: "));
+        let diemgk = parseFloat(prompt("Nhap vao diem giua ki: "));
+        let diemck = parseFloat(prompt("Nhap vao diem cuoi ki: "));
+        let diemtong = diemkt * 0.2 + diemgk * 0.3 + diemck * 0.5;
+
+        if(diemtong >= 8){
+            document.write("Xep hang hoc sinh gioi");
+        }else if(diemtong >=6.5){
+            document.write("Xep hang hoc sinh kha");
+        }
+        else{
+            document.write("Xep hang hoc sinh trung binh");
+        }
+    </script>
+</body>
+</html>
