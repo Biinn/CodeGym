@@ -7,17 +7,20 @@
 </head>
 <body>
     <script>
-        let numbers = +prompt("Nhap so can xac dinh: ");
+        let numbers = 2;
         let count = 0;
-        for(let i=0; i<=numbers;i++){
-            if(numbers % i === 0){
-                count++;
+        while(count < 20){
+            let isPrime = true;
+            for(let i = 2; i <= Math.sqrt(numbers); i++){
+                if(numbers % i === 0){
+                    isPrime = false;
+                }
             }
-        }
-        if(count ===2){
-            document.write(numbers + " La so nguyen to");
-        }else{
-            document.write(numbers + "  phai la so nguyen to");
+            if(isPrime){
+                count++;
+                document.write(numbers + "<br>");
+            }
+            numbers++;
         }
     </script>
 </body>
