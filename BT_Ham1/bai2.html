@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        function increaseValue(number) {
+            return number + 1;
+        }
+        var initialValue = 5;
+        var incrementedValue = increaseValue(initialValue);
+        document.getElementById("result").innerHTML = "Giá trị sau khi tăng là: " + incrementedValue;
+    </script>
+</body>
+</html>
