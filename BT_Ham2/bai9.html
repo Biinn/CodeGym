@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function countOccurrences(arr, char) {
+             const filteredArray = arr.filter(element => element === char);
+             return filteredArray.length > 0 ? filteredArray.length : -1;
+        }
+      const arr = ['a', 'b', 'c', 'd', 'e', 'a', 'f'];
+      const charToFind = 'a';
+      const occurrences = countOccurrences(arr, charToFind);
+      if (occurrences !== -1) {
+        console.log(`Ký tự '${charToFind}' xuất hiện ${occurrences} lần trong mảng.`);
+      } else {
+        console.log(`Ký tự '${charToFind}' không xuất hiện trong mảng.`);
+      }</script>
+</body>
+</html>
